@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+	<title>The Asian Indian</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		.frm {
+			margin: 0% 20% 0% 20%;
+		}
+
+		input.ng-invalid.ng-dirty {
+			border: 2px solid red;
+		}
+
+		input.ng-invalid.ng-dirty {
+			border: 2px solid red;
+		}
+
+		span {
+			color: aliceblue;
+		}
+	</style>
+</head>
+
+<body>
+
+	<section class="billboard light">
+		<header class="wrapper light">
+			<a href="#"><img class="logo" src="img/logo.png" alt="Asian Cusine Restaurant" /></a>
+			<nav>
+				<ul>
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./menu.html">Menu</a></li>
+					<li><a href="./karaoke.html">Party</a></li>
+					<li><a href="./promotions.html">Promotions/Events</a></li>
+					<li><a href="./contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="caption light animated wow fadeInDown clearfix">
+			<h1>Come talk to us</h1>
+			<p>We always value your words.</p>
+			<hr>
+		</div>
+		<div class="shadow"></div>
+	</section><!--  End billboard  -->
+
+
+
+	
+
+
+	<section class="services wrapper">
+		<ul class="clearfix">
+			<li class="animated wow fadeInDown">
+
+				<span class="separator"></span>
+			</li>
+			<li class="animated wow fadeInDown"><span class="separator"></span>
+			</li>
+			<li class="animated wow fadeInDown"><span class="separator"></span>
+			</li>
+			<li class="animated wow fadeInDown"><span class="separator"></span>
+			</li>
+			<li class="animated wow fadeInDown" data-wow-delay=".5s">
+				<img class="icon" src="img/icon2.png" alt="" />
+				<span class="separator"></span>
+				<h2>How to reach us:</h2>
+				<p>Phone No. 9876504321 , Fax: 00100 1764539</p>
+				<p>House No. 167. Road. Nh23. Block. C.</p>
+				<p>Govardhan Society ,Ranchi,Jharkhand,829122</p>
+				<!-- Google maps embed here -->
+			</li>
+		</ul>
+	</section><!--  End services  -->
+
+
+	<section class="video">
+		<img class="logo" src="img/logo.png" alt="Restaurant welcomes you" class="video_logo animated wow fadeInDown" />
+		<img src="img/video_logo.png" alt="" class="video_logo animated wow fadeInDown" />
+		<h3 class="animated wow fadeInDown">Please send us your opinions in the form below, thank you!</h3>
+
+	</section><!--  End video  -->
+
+	<!-- contact form -->
+	<section class="contact">
+		<div id="form-main">
+			<div id="form-div">
+
+				<form name="frm" class="form" id="from1">
+					<div>
+						<input type="text" placeholder="First Name" name="fname" ng-model="fname"
+							class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" required>
+						<span ng-show="frm.fname.$dirty && frm.fname.$error.required">Required!</span>
+					</div>
+					<div>
+						<input type="email" placeholder="Email" name="email" ng-model="user.email"
+							class="validate[required,custom[email]] feedback-input" required>
+						<span ng-show="frm.email.$dirty && frm.email.$error.required">Required!</span>
+						<span ng-show="frm.email.$dirty && frm.email.$error.email">Not an email!</span>
+					</div>
+
+					<p class="text">
+						<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment"
+							placeholder="Comment"></textarea>
+					</p>
+
+
+					<div class="submit">
+						<input type="submit" value="SEND" id="button-blue" />
+						<div class="ease"></div>
+					</div>
+					
+					
+				</form>
+			</div>
+		</div>
+	</section>
+
+	
+		<footer>
+			<div class="wrapper">
+				<div class="rights">
+					<p>All Rights Reserved 2020 - The Asian Indian</p>
+				</div>
+			</div>
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/fancybox.js"></script>
+	<script type="text/javascript" src="js/fancybox-buttons.js"></script>
+	<script type="text/javascript" src="js/fancybox-media.js"></script>
+	<script type="text/javascript" src="js/fancybox-thumbs.js"></script>
+	<script type="text/javascript" src="js/wow.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
